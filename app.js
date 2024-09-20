@@ -1,13 +1,10 @@
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
-const mongoose = require("mongoose");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 require("./config/db");
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/userRouter");
-
 var app = express();
 
 // view engine setup
